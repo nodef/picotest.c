@@ -1,37 +1,20 @@
 # Picotest
 
-Picotest is a minimal C89 unit test framework, consisting of a single header file that defines 7 macros.
+Picotest is a minimal C89 unit test framework, consisting of a single header file that defines 7 macros - by [colinbarry](https://github.com/colinbarry).
+
 
 ## Installation
 
-The recommended way to incorporate Picotest is using modern CMake with `FetchContent`.
-
-You should add the following configuration to your `CMakeLists.txt` to download
-the package and enable testing in your project:
-
-```cmake
-include(FetchContent)
-option(ENABLE_TESTING "Enable the tests" ON) 
-if (ENABLE_TESTING AND CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
-    FetchContent_Declare(
-        Picotest
-        GIT_REPOSITORY https://github.com/colinbarry/picotest
-        GIT_TAG main)
-    FetchContent_MakeAvailable(Picotest)
-
-    enable_testing()
-endif()
+Run:
+```bash
+$ npm i picotest.c
 ```
 
-Picotest can then be included with the following `#include` directive:
-
+And then include `picotest.h` as follows:
 ```c
-#include <picotest/picotest.h>
+#include "node_modules/picotest.c/include/picotest/picotest.h"
 ```
 
-Alternatively, if your project doesn't use CMake, simply copy the header
-file `picotest.h` to an appropriate location and include it. Picotest has no
-other dependencies and so can be safely deployed by copying the header.
 
 ## Usage
 
@@ -106,3 +89,10 @@ And then run the sample with:
 ```bash
 ./build/sample/sample
 ```
+
+<br>
+<br>
+
+
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/picotest.c)
