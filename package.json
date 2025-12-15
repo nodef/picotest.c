@@ -1,0 +1,23 @@
+{
+  "name": "picotest.c",
+  "version": "1.2024.3",
+  "description": "Picotest is a minimal C89 unit test framework, consisting of a single header file that defines 7 macros.; colinbarry (2020).",
+  "keywords": [
+    "c",
+    "library",
+    "unit test",
+    "testing",
+    "framework",
+    "header only"
+  ],
+  "homepage": "https://github.com/nodef/picotest.c#readme",
+  "bugs": {
+    "url": "https://github.com/nodef/picotest.c/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/picotest.c.git"
+  },
+  "license": "MIT",
+  "main": "picotest.h"
+}
